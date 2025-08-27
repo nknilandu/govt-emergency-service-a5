@@ -47,7 +47,7 @@
     <!-- main section -->
     <main class="flex flex-col-reverse sm:flex-row max-w-screen-2xl mx-auto px-5 py-6 gap-5 overflow-hidden">
         <!-- grid card -->
-        <div class="flex-[50%] md:flex-[80%] lg:flex-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div id="card-container" class="flex-[50%] md:flex-[80%] lg:flex-[75%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
             <!-- card 1 -->
             <div class=" flex flex-col gap-3 bg-white rounded-2xl shadow p-6">
@@ -56,15 +56,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">National Emergency Number</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">National Emergency Number</h3>
                     <p class="text-[#5C5C5C]">National Emergency</p>
-                    <h3 class="text-2xl font-bold mt-2">999</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">All</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -76,15 +76,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Police Helpline Number</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Police Helpline Number</h3>
                     <p class="text-[#5C5C5C]">Police</p>
-                    <h3 class="text-2xl font-bold mt-2">999</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Police</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -96,15 +96,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold">Fire Service Number</h3>
+                    <h3 class="card-title text-xl font-bold">Fire Service Number</h3>
                     <p class="text-[#5C5C5C]">Fire Service</p>
-                    <h3 class="text-2xl font-bold mt-2">999</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Fire</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -115,15 +115,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Ambulance Service</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Ambulance Service</h3>
                     <p class="text-[#5C5C5C]">Ambulance</p>
-                    <h3 class="text-2xl font-bold mt-2">1994-999999</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">1994-999999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Health</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -134,15 +134,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Women & Child Helpline</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Women & Child Helpline</h3>
                     <p class="text-[#5C5C5C]">Women & Child Helpline</p>
-                    <h3 class="text-2xl font-bold mt-2">109</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">109</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Help</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -154,15 +154,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Anti-Corruption Helpline</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Anti-Corruption Helpline</h3>
                     <p class="text-[#5C5C5C]">Anti-Corruption</p>
-                    <h3 class="text-2xl font-bold mt-2">106</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">106</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Govt.</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -173,15 +173,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Electricity Helpline</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Electricity Helpline</h3>
                     <p class="text-[#5C5C5C]">Electricity Outage</p>
-                    <h3 class="text-2xl font-bold mt-2">16216</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">16216</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Electricity</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -192,15 +192,15 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Brac Helpline</h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Brac Helpline</h3>
                     <p class="text-[#5C5C5C]">Brac</p>
-                    <h3 class="text-2xl font-bold mt-2">16445</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">16445</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">NGO</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
@@ -211,50 +211,38 @@
                     <p class="text-xl"><i class="fa-regular fa-heart"></i></p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-bold mt-3">Bangladesh Railway Helpline </h3>
+                    <h3 class="card-title text-xl font-bold mt-3">Bangladesh Railway Helpline </h3>
                     <p class="text-[#5C5C5C]">Bangladesh Railway</p>
-                    <h3 class="text-2xl font-bold mt-2">16216</h3>
+                    <h3 class="call-number text-2xl font-bold mt-2">16216</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Travel</p>
                 </div>
                 <!-- button -->
                  <div class="flex-1 flex items-end gap-3">
-                    <button class="w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
-                    <button class="w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
+                    <button class="copy-btn w-full h-fit border-2 rounded-lg p-1.5 text-[#5C5C5C] hover:bg-[#D9D9D9]"><i class="fa-regular fa-copy"></i> Copy</button>
+                    <button class="call-btn w-full h-fit  rounded-lg p-2 text-white bg-[#00A63E] hover:bg-[#236D3E]"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
             </div>
 
 
         </div>
-        <div class="flex-[30%] md:flex-[40%] lg:flex-[25%]">
+        <!-- history card -->
+        <div id="history-box" class="flex-[30%] md:flex-[40%] lg:flex-[25%]">
             <!-- call history -->
             <div class="bg-white rounded-2xl shadow p-5 h-full">
                 
                 <div class="flex justify-between items-center">
                     <h3 class="font-bold text-lg"><i class="fa-solid fa-clock-rotate-left"></i> History</h3>
-                    <button class="py-1.5 px-4 rounded-full text-white bg-[#00A63E] hover:bg-[#236D3E]">Clear</button>
+                    <!-- button clear -->
+                    <button id="clear-btn" class="py-1.5 px-4 rounded-full text-white bg-[#00A63E] hover:bg-[#236D3E]">Clear</button>
                 </div>
-                <div class="historyCardParent">
-                    <!-- <p class="h-36 w-full flex items-center justify-center"> No Data found</p> -->
-                     <div class="flex justify-between items-center rounded-xl bg-[#FAFAFA] p-3 mt-3">
-                        <div>
-                            <h4 class="font-medium">Fire Service Number</h4>
-                            <p class="text-[#5C5C5C]">999</p>
-                        </div>
-                        <p class="text-[#5C5C5C]">11:36:58 AM</p>
-                     </div>
-                     <!-- another cart  -->
-                       <div class="flex justify-between items-center gap-2.5 rounded-xl bg-[#FAFAFA] p-3 mt-3">
-                        <div>
-                            <h4 class="font-medium">Fire Service Number</h4>
-                            <p class="text-[#5C5C5C]">999</p>
-                        </div>
-                        <p class="text-[#5C5C5C]">11:36:58 AM</p>
-                     </div>
+                <div id="historyCardParent">
+                    <p class="no-data-text h-36 w-full flex items-center justify-center"> No Data found</p>
+                     
                 </div>
             </div>
         </div>
     </main>
     <footer class="max-w-screen-xl mx-auto px-2.5"></footer>
-    <script src="./javascript/main.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 </html>
