@@ -1,45 +1,82 @@
+let historyArr =[];
+let heartCount = parseInt(document.getElementById('heart-count').innerText);
+let coinCount = parseInt(document.getElementById('coin-count').innerText);
+let copyCount = parseInt(document.getElementById('copy-count').innerText);
+// console.log(heartCount, coinCount, copyCount)
 
-let historyArr = [];
 document.getElementById('card-container').addEventListener('click', function(event) {
-    // console.log(event.target.classList.contains('call-btn'));
-    if(event.target.classList.contains('call-btn')){
-        // console.log(true);
-        // save data to variable
-        const cardTitle = event.target.parentNode.parentNode.querySelector('.card-title').innerText;
-        const callNumber = event.target.parentNode.parentNode.querySelector('.call-number').innerText;
-        console.log(cardTitle, callNumber)
 
-        //add card to history
-        const historyCardParent = document.getElementById('historyCardParent');
-        const historyCard = document.createElement('div');
+    // call button click
+    if(event.target.classList.contains('call-btn')){
+        // getting all value
+        const cardTitle = event.target.parentNode.parentNode.querySelector('.card-title').innerText;
+        const cardSubTitle = event.target.parentNode.parentNode.querySelector('.card-subtitle').innerText;
+        const callNumber = event.target.parentNode.parentNode.querySelector('.call-number').innerText;
+
         // get current time
         const now = new Date();
         const currentTime = now.toLocaleTimeString(); 
+        // console.log(cardTitle, cardSubTitle, callNumber, currentTime)
 
+        // check have user enough money or not
+        if(coinCount >= 20) {
+            // update array
+            historyArr.push( {
+                title : cardTitle,
+                number : callNumber,
+                time : currentTime
+            });
+            console.log(historyArr)
 
-        historyArr.push({
-            title : cardTitle,
-            number: callNumber,
-            time : currentTime
-        });
-        console.log(historyArr)
-
-        historyCard.innerHTML = `
-            <div class="flex justify-between items-center gap-2 rounded-xl bg-[#FAFAFA] p-3 mt-3 overflow-hidden">
-                <div>
-                    <h4 class="font-medium">${historyArr[historyArr.length-1].title}</h4>
-                    <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].number}</p>
+            // add and update card to history
+            const historyCardParent = document.getElementById('historyCardParent');
+            const historyCard = document.createElement('div');
+            historyCard.innerHTML = `
+                <div class="flex justify-between items-center gap-2 rounded-xl bg-[#FAFAFA] p-3 mt-3 overflow-hidden">
+                    <div>
+                        <h4 class="font-medium">${historyArr[historyArr.length-1].title}</h4>
+                        <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].number}</p>
+                    </div>
+                    <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].time}</p>
                 </div>
-                <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].time}</p>
-            </div>
-        `;
-        historyCardParent.append(historyCard);
+            `;
+            historyCardParent.append(historyCard);
 
-        // remove placeholder text
-        if(document.querySelector('.no-data-text')) {
-            document.querySelector('.no-data-text').remove();
+            // remove placeholder
+            if(document.querySelector('.no-data-text')){
+                document.querySelector('.no-data-text').remove();
+            }
+
+            // decrease balance
+            coinCount -= 20;
+            document.getElementById('coin-count').innerText = coinCount;
+
+            alert(`📞 Calling ${cardSubTitle}: ${callNumber}`);
+        } else {
+            alert("⚠️ You don't have sufficient balance");
         }
         
+    }
+
+
+    // copy button click
+    if(event.target.classList.contains('copy-btn')) {
+        // copy number
+        const callNum = event.target.parentNode.parentNode.querySelector('.call-number').innerText;
+        navigator.clipboard.writeText(callNum);
+        // Increase number
+        copyCount++;
+        document.getElementById('copy-count').innerText = copyCount;
+
+        alert(`✅ Number copied: ${callNum}`);
+    }
+
+
+    // heart button click
+    if(event.target.classList.contains('fa-heart')) {
+        // increase heart number
+        heartCount++;
+        document.getElementById('heart-count').innerText = heartCount;
     }
 
 })
@@ -52,6 +89,84 @@ document.getElementById('clear-btn').addEventListener('click', function(event) {
         <p class="no-data-text h-36 w-full flex items-center justify-center"> No Data found</p>
     `;
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let historyArr = [];
+// document.getElementById('card-container').addEventListener('click', function(event) {
+//     // console.log(event.target.classList.contains('call-btn'));
+//     if(event.target.classList.contains('call-btn')){
+//         // console.log(true);
+//         // save data to variable
+//         const cardTitle = event.target.parentNode.parentNode.querySelector('.card-title').innerText;
+//         const callNumber = event.target.parentNode.parentNode.querySelector('.call-number').innerText;
+//         console.log(cardTitle, callNumber)
+
+//         //add card to history
+//         const historyCardParent = document.getElementById('historyCardParent');
+//         const historyCard = document.createElement('div');
+//         // get current time
+//         const now = new Date();
+//         const currentTime = now.toLocaleTimeString(); 
+
+
+//         historyArr.push({
+//             title : cardTitle,
+//             number: callNumber,
+//             time : currentTime
+//         });
+//         console.log(historyArr)
+
+//         historyCard.innerHTML = `
+//             <div class="flex justify-between items-center gap-2 rounded-xl bg-[#FAFAFA] p-3 mt-3 overflow-hidden">
+//                 <div>
+//                     <h4 class="font-medium">${historyArr[historyArr.length-1].title}</h4>
+//                     <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].number}</p>
+//                 </div>
+//                 <p class="text-[#5C5C5C]">${historyArr[historyArr.length-1].time}</p>
+//             </div>
+//         `;
+//         historyCardParent.append(historyCard);
+
+//         // remove placeholder text
+//         if(document.querySelector('.no-data-text')) {
+//             document.querySelector('.no-data-text').remove();
+//         }
+        
+//     }
+
+// })
+
+
 
 
 

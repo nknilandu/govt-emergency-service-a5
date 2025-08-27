@@ -23,16 +23,16 @@
             <div class="flex items-center gap-4">
                 <!-- heart number -->
                 <div class="inline-flex items-center gap-1.5 px-5 py-1.5 font-bold rounded-full bg-[#edfff1]">
-                    <p class="font-bold">0</p>
+                    <p id="heart-count" class="font-bold">0</p>
                     <img class="h-5" src="./assets/heart.png" alt="heart">
                 </div>
                 <!-- coin number -->
                 <div class="inline-flex items-center gap-1.5 px-5 py-1.5 font-bold rounded-full bg-[#edfff1]">
-                    <p class="font-bold">0</p>
+                    <p id="coin-count" class="font-bold">100</p>
                     <img class="h-5" src="./assets/coin.png" alt="coin">
                 </div>
                 <!-- copy number -->
-                <p class="inline-flex items-center gap-1.5 px-5 py-1.5  rounded-full bg-[#00A63E] text-white"><span>0</span> copy</p>
+                <p class="inline-flex items-center gap-1.5 px-5 py-1.5  rounded-full bg-[#00A63E] text-white"><span id="copy-count">0</span> copy</p>
             </div>
         </nav>
         <!-- banner div -->
@@ -57,7 +57,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">National Emergency Number</h3>
-                    <p class="text-[#5C5C5C]">National Emergency</p>
+                    <p class="card-subtitle text-[#5C5C5C]">National Emergency</p>
                     <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">All</p>
                 </div>
@@ -77,7 +77,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Police Helpline Number</h3>
-                    <p class="text-[#5C5C5C]">Police</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Police</p>
                     <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Police</p>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold">Fire Service Number</h3>
-                    <p class="text-[#5C5C5C]">Fire Service</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Fire Service</p>
                     <h3 class="call-number text-2xl font-bold mt-2">999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Fire</p>
                 </div>
@@ -116,7 +116,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Ambulance Service</h3>
-                    <p class="text-[#5C5C5C]">Ambulance</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Ambulance</p>
                     <h3 class="call-number text-2xl font-bold mt-2">1994-999999</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Health</p>
                 </div>
@@ -135,7 +135,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Women & Child Helpline</h3>
-                    <p class="text-[#5C5C5C]">Women & Child Helpline</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Women & Child Helpline</p>
                     <h3 class="call-number text-2xl font-bold mt-2">109</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Help</p>
                 </div>
@@ -155,7 +155,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Anti-Corruption Helpline</h3>
-                    <p class="text-[#5C5C5C]">Anti-Corruption</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Anti-Corruption</p>
                     <h3 class="call-number text-2xl font-bold mt-2">106</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Govt.</p>
                 </div>
@@ -174,7 +174,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Electricity Helpline</h3>
-                    <p class="text-[#5C5C5C]">Electricity Outage</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Electricity Outage</p>
                     <h3 class="call-number text-2xl font-bold mt-2">16216</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Electricity</p>
                 </div>
@@ -193,7 +193,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Brac Helpline</h3>
-                    <p class="text-[#5C5C5C]">Brac</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Brac</p>
                     <h3 class="call-number text-2xl font-bold mt-2">16445</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">NGO</p>
                 </div>
@@ -212,7 +212,7 @@
                 </div>
                 <div>
                     <h3 class="card-title text-xl font-bold mt-3">Bangladesh Railway Helpline </h3>
-                    <p class="text-[#5C5C5C]">Bangladesh Railway</p>
+                    <p class="card-subtitle text-[#5C5C5C]">Bangladesh Railway</p>
                     <h3 class="call-number text-2xl font-bold mt-2">16216</h3>
                     <p class="inline-flex text-[#5C5C5C] bg-[#F2F2F2] rounded-2xl px-3 py-1 mt-1 text-sm">Travel</p>
                 </div>
